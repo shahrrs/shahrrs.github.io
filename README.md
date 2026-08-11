@@ -6,6 +6,11 @@ Plain HTML/CSS/JS — no build step, no dependencies. Three pages:
 - `projects.html` — projects (best ball tracker, client work, GitHub repos, coursework)
 - `about.html` — bio, experience log, education, skills, resume link
 
+This site is set up to live at the root of your GitHub Pages domain:
+`https://shahrrs.github.io/`. All internal links are relative, so it'll
+also work fine from a subfolder — just double check the `og:url` meta tag
+in each page's `<head>` matches wherever it actually ends up.
+
 ## Nothing left to fill in
 
 Everything from your resume is in place, `assets/resume.pdf` is wired up,
@@ -16,24 +21,42 @@ own data, not a public dataset, so there's no demo URL that would make
 sense to share. If that changes later, add a link back into the
 `project-card featured` block in `projects.html`.
 
-## Deploying to GitHub Pages (free, easiest for job applications)
+## What's included
 
-1. Create a new repo, e.g. `shahrrs/portfolio` (or use a repo named
-   `shahrrs.github.io` if you want it at the root of your GitHub Pages
-   domain — `https://shahrrs.github.io`).
-2. Push these files to the repo root:
+- Three screenshots from the best ball tracker (`assets/screens/`), shown
+  in a gallery on the tracker's project card — click any of them to open
+  a full-size lightbox view
+- The Crimson Dusk trailer (`assets/video/crimson-dusk-trailer.mp4`),
+  compressed from 86MB down to ~36MB and embedded directly on the
+  coursework entry with a native HTML5 player
+- Open Graph + Twitter card meta tags on all three pages, plus a generated
+  banner image (`assets/og-banner.png`) so the link looks right when pasted
+  into email, Slack, or a job application field
+- A generated favicon (`favicon.ico`, `assets/apple-touch-icon.png`)
+- An impact stats row on the home page (10,000+ lines, 300+ users, 10+
+  engineers led, 75% faster incident resolution)
+- A short paragraph on the about page describing your actual AI workflow
+
+## Deploying to GitHub Pages
+
+1. Push these files to the root of your `shahrrs/shahrrs.github.io` repo:
    ```
    git init
    git add .
    git commit -m "portfolio site"
    git branch -M main
-   git remote add origin https://github.com/shahrrs/portfolio.git
+   git remote add origin https://github.com/shahrrs/shahrrs.github.io.git
    git push -u origin main
    ```
-3. In the repo: **Settings → Pages → Source** → select `main` branch, `/root`
+2. In the repo: **Settings → Pages → Source** → select `main` branch, `/root`
    folder → Save.
-4. Your site goes live at `https://shahrrs.github.io/portfolio/` (or
-   `https://shahrrs.github.io/` if you used the special repo name).
+3. Your site goes live at `https://shahrrs.github.io/`.
+
+A heads up: the video file is ~36MB, which pushes the repo size up.
+That's still well within GitHub's limits and fine for a one-off push, but
+if you add more video later, consider hosting it on YouTube (unlisted)
+instead and swapping in an iframe embed — repos with a lot of binary
+media get slow to clone over time.
 
 ## Notes on the design
 

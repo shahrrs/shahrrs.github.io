@@ -4,9 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Rishi Shah</title>
+<meta name="description" content="Client work, personal projects, and coursework — from a 10,000+ line AI-assisted build to a best ball fantasy football tracker.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects — Rishi Shah">
+<meta property="og:description" content="Client work, personal projects, and coursework — from a 10,000+ line AI-assisted build to a best ball fantasy football tracker.">
+<meta property="og:image" content="assets/og-banner.png">
+<meta property="og:url" content="https://shahrrs.github.io/projects.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects — Rishi Shah">
+<meta name="twitter:description" content="Client work, personal projects, and coursework — from a 10,000+ line AI-assisted build to a best ball fantasy football tracker.">
+<meta name="twitter:image" content="assets/og-banner.png">
 </head>
 <body>
 
@@ -25,7 +37,7 @@
 <main>
   <section class="page-head">
     <div class="wrap">
-      <span class="eyebrow">$ ls ./projects</span>
+      <span class="eyebrow">Projects</span>
       <h1>Things I've built — client work, side projects, and the repos I keep coming back to.</h1>
       <p class="hero-sub">
         Two flagship builds up top, then the wider GitHub, then a couple of graduate coursework
@@ -64,6 +76,21 @@
           <span class="pill">DraftKings</span>
           <span class="pill">single-file architecture</span>
           <span class="pill">iterative build</span>
+        </div>
+
+        <div class="shot-grid">
+          <figure>
+            <img src="assets/screens/best-ball-exposure.jpg" alt="Player exposure table showing lineup percentage and dollar exposure across a draft portfolio">
+            <figcaption>Exposure tracking across players, teams, and positions</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screens/best-ball-stacks.jpg" alt="Stacks by team chart and megastack leaderboard showing correlated player groupings">
+            <figcaption>Stack analysis by team, with a megastack leaderboard</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/screens/best-ball-draft.jpg" alt="Live draft assistant showing available players filtered by ADP window with exposure and correlation notes">
+            <figcaption>Live draft assistant, filtered to realistic picks by ADP</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -153,9 +180,52 @@
         </p>
         <span class="note">OMSCS · Georgia Tech — group project, no public repo</span>
       </div>
+      <div class="school-entry school-entry--media">
+        <span class="repo-name">Crimson Dusk — stealth vampire game</span>
+        <p>
+          A 3D stealth-action game built in Unity with a 5-person team, playing a vampire
+          infiltrating a cyberpunk city to reclaim a shattered relic. Built the AI and systems
+          side: NavMesh-driven guard pathfinding, finite state machines for AI behavior,
+          raycast-based vision detection, and gameplay systems including a blood/health economy,
+          ability unlocks, and a minimap.
+        </p>
+        <span class="note">OMSCS · Game AI / Video Game Design — team project, no public repo</span>
+        <div class="video-frame">
+          <video controls preload="metadata" poster="">
+            <source src="assets/video/crimson-dusk-trailer.mp4" type="video/mp4">
+            Your browser doesn't support embedded video — you can
+            <a href="assets/video/crimson-dusk-trailer.mp4">download the trailer directly</a>.
+          </video>
+        </div>
+      </div>
+      <div class="school-entry">
+        <span class="repo-name">Prison Dodgeball — AI opponents</span>
+        <p>
+          A dodgeball game built in C# and Unity with AI opponents that scale in difficulty, and
+          an AI-controlled ally team that has to out-throw them. Enemy and teammate behavior both
+          run on finite state machines, layered with physics-based ball trajectory and throwing
+          tactics.
+        </p>
+        <span class="note">OMSCS · Game AI — assignment, no public repo</span>
+      </div>
+      <div class="school-entry">
+        <span class="repo-name">Fuzzy-logic race car</span>
+        <p>
+          A self-driving race car built around a fuzzy logic controller in C#. Speed and track
+          curvature feed a set of fuzzy rules that output throttle and steering values, letting
+          the car brake into turns, hold a line through them, and accelerate back out —
+          without any hard-coded if/else driving logic.
+        </p>
+        <span class="note">OMSCS · Game AI — assignment, no public repo</span>
+      </div>
     </div>
   </section>
 </main>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="" id="lightboxImg">
+  <div class="lb-caption" id="lightboxCaption"></div>
+</div>
 
 <footer class="site-footer">
   <div class="wrap">

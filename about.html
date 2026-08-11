@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Rishi Shah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">rishi<span class="dot">.</span>shah</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">menu</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">home</a>
+      <a href="projects.html">projects</a>
+      <a href="about.html" class="active">about / resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">$ cat about.md</span>
+      <h1>Lead Engineer, team lead, and lifelong student of the stack.</h1>
+      <p class="hero-sub">
+        I'm a Lead Engineer at Accenture, embedded with Comcast, working across data pipelines,
+        LLM-driven systems, and real-time analytics. I manage a team of engineers, I'm finishing
+        an M.S. in Computer Science with an AI specialization at Georgia Tech, and I use AI coding
+        agents every day — as a tool that speeds me up, not one that replaces the judgment calls.
+      </p>
+      <div class="btn-row" style="margin-top:28px;">
+        <a href="assets/resume.pdf" class="btn btn-primary" download>download resume (pdf)</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <span class="count mono">git log --oneline</span>
+      </div>
+      <div class="log">
+        <div class="log-entry">
+          <span class="log-hash mono">#a1e92f</span>
+          <h3>Senior Software Engineer — Accenture, embedded at Comcast</h3>
+          <p class="log-meta">Philadelphia, PA · April 2023 — Present</p>
+          <p>
+            Lead a team of 10+ developers across full-stack delivery, owning sprints, code
+            reviews, and client-facing milestones on top of hands-on system design.
+          </p>
+          <ul>
+            <li>Built an LLM-driven provisioning system supporting 300+ users, weighing tradeoffs like sync vs. async and scalability</li>
+            <li>Designed an AI solution that auto-remediated 200+ SonarQube issues and raised test coverage by 80%</li>
+            <li>Optimized data pipeline architecture across 100+ SQL queries, improving ETL/API throughput for 500+ engineers</li>
+            <li>Led a team of 10+ developers across full-stack delivery — sprints, code reviews, client milestones</li>
+            <li>Cut average incident resolution time 75% through monitoring and live production support for 250+ architects</li>
+          </ul>
+        </div>
+        <div class="log-entry">
+          <span class="log-hash mono">#7c3d19</span>
+          <h3>Java Engineer — Accenture, embedded at Comcast</h3>
+          <p class="log-meta">Philadelphia, PA · August 2021 — March 2023</p>
+          <p>
+            Owned the migration of a core service to Java and the production deployment pipeline
+            that shipped it.
+          </p>
+          <ul>
+            <li>Migrated a Node microservice to Java, improving scalability and reliability with 100% JUnit code coverage</li>
+            <li>Owned the software deployment pipeline for production releases, improving uptime and stability</li>
+            <li>Designed high-throughput data ingestion APIs feeding AWS Kinesis streams for real-time analytics at scale</li>
+            <li>Improved pipeline reliability and observability with the ELK Stack, cutting downtime 33% across distributed data flows</li>
+          </ul>
+        </div>
+        <div class="log-entry">
+          <span class="log-hash mono">#0f88a2</span>
+          <h3>Summer Technology Analyst — Bank of America</h3>
+          <p class="log-meta">Dallas, TX · June — August 2020</p>
+          <p>
+            Built an NLP/LDA pipeline in Python to analyze 500+ financial documents and surface
+            actionable insights, applying topic modeling to identify risk patterns.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+      <div class="log">
+        <div class="log-entry">
+          <span class="log-hash mono">#4b7e21</span>
+          <h3>M.S. Computer Science — AI Specialization</h3>
+          <p class="log-meta">Georgia Institute of Technology (OMSCS) · Expected Dec 2027</p>
+          <p>Graduate coursework spanning software testing, mobile development, and applied AI.</p>
+        </div>
+        <div class="log-entry">
+          <span class="log-hash mono">#e21c50</span>
+          <h3>B.S. Computer Engineering, B.A. Computer Science</h3>
+          <p class="log-meta">Rutgers University Honors College · New Brunswick, NJ · May 2021</p>
+          <p>Presidential Scholarship recipient, Dean's List, Summa Cum Laude.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <span class="cat mono">// languages</span>
+          <div class="tag-row">
+            <span class="pill">Java</span>
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">C#</span>
+            <span class="pill">C++</span>
+          </div>
+        </div>
+        <div class="skill-block">
+          <span class="cat mono">// frameworks &amp; libraries</span>
+          <div class="tag-row">
+            <span class="pill">Spring Boot</span>
+            <span class="pill">Angular</span>
+            <span class="pill">Node</span>
+            <span class="pill">React</span>
+          </div>
+        </div>
+        <div class="skill-block">
+          <span class="cat mono">// cloud &amp; devops</span>
+          <div class="tag-row">
+            <span class="pill">AWS (EC2, S3, Kinesis)</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Git</span>
+            <span class="pill">CI/CD (Jenkins, GoCD)</span>
+          </div>
+        </div>
+        <div class="skill-block">
+          <span class="cat mono">// AI / ML</span>
+          <div class="tag-row">
+            <span class="pill">Anthropic Claude API</span>
+            <span class="pill">GitHub Copilot</span>
+            <span class="pill">Prompt engineering</span>
+            <span class="pill">TensorFlow</span>
+            <span class="pill">OpenCV</span>
+          </div>
+        </div>
+        <div class="skill-block">
+          <span class="cat mono">// concepts</span>
+          <div class="tag-row">
+            <span class="pill">System design</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">Agile / Scrum</span>
+            <span class="pill">JUnit / unit testing</span>
+          </div>
+        </div>
+        <div class="skill-block">
+          <span class="cat mono">// tools</span>
+          <div class="tag-row">
+            <span class="pill">ELK Stack</span>
+            <span class="pill">Grafana</span>
+            <span class="pill">SonarQube</span>
+            <span class="pill">AWS Certified Cloud Practitioner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Contact</h2>
+      </div>
+      <p class="hero-sub" style="margin-bottom:22px;">
+        Best way to reach me is email or LinkedIn — happy to talk about roles, projects, or
+        anything AI-and-engineering related.
+      </p>
+      <div class="btn-row">
+        <a href="mailto:17shahr@gmail.com" class="btn">email</a>
+        <a href="https://linkedin.com/in/rishi-shah1" class="btn" target="_blank" rel="noopener">linkedin</a>
+        <a href="https://github.com/shahrrs" class="btn" target="_blank" rel="noopener">github</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="footer-note">Rishi Shah — built by hand, styled with an assist from AI.</span>
+    <nav class="footer-links">
+      <a href="https://github.com/shahrrs" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/rishi-shah1" target="_blank" rel="noopener">linkedin</a>
+      <a href="mailto:17shahr@gmail.com">email</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

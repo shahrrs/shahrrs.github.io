@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Rishi Shah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">rishi<span class="dot">.</span>shah</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">menu</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">home</a>
+      <a href="projects.html" class="active">projects</a>
+      <a href="about.html">about / resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">$ ls ./projects</span>
+      <h1>Things I've built — client work, side projects, and the repos I keep coming back to.</h1>
+      <p class="hero-sub">
+        Two flagship builds up top, then the wider GitHub, then a couple of graduate coursework
+        projects I can describe but can't link.
+      </p>
+    </div>
+  </section>
+
+  <section class="block" id="best-ball">
+    <div class="wrap">
+      <div class="project-card featured">
+        <div class="project-head">
+          <div>
+            <span class="project-kicker mono">personal project · in progress</span>
+            <h3>Best Ball Fantasy Football Tracker</h3>
+          </div>
+          <span class="project-kicker mono">single-file app</span>
+        </div>
+        <p class="desc">
+          A comprehensive tracker for best ball fantasy football spanning both Underdog and
+          DraftKings, built in one continuous, collaborative build session with many iterative
+          fixes along the way. It's the project I use to test out ideas fast — new features
+          get scoped, built, and shipped in the same sitting.
+        </p>
+        <ul class="feat">
+          <li>Exposure tracking across players, teams, and stacks</li>
+          <li>Closing line value (CLV) tracking</li>
+          <li>Playoff matchup projections</li>
+          <li>Stack and correlation analysis</li>
+          <li>Strategy archetype breakdowns</li>
+          <li>Live draft assistant</li>
+        </ul>
+        <div class="tag-row">
+          <span class="pill">JavaScript</span>
+          <span class="pill">Underdog</span>
+          <span class="pill">DraftKings</span>
+          <span class="pill">single-file architecture</span>
+          <span class="pill">iterative build</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-head">
+          <div>
+            <span class="project-kicker mono">client work · Accenture @ Comcast</span>
+            <h3>AI-Assisted Rapid Prototype System</h3>
+          </div>
+          <span class="project-kicker mono">10,000+ lines · 8 weeks</span>
+        </div>
+        <p class="desc">
+          Rapidly prototyped and shipped a 10,000+ line full-stack application in 8 weeks using
+          spec-driven, LLM-assisted development — guiding AI coding agents through system design
+          and architectural tradeoffs while retaining full code review and QA ownership.
+        </p>
+        <ul class="feat">
+          <li>Spec-driven development from ambiguous stakeholder requirements</li>
+          <li>AI coding agents guided through architectural tradeoffs</li>
+          <li>10,000+ lines shipped in 8 weeks</li>
+          <li>Full code review and QA ownership retained throughout</li>
+        </ul>
+        <div class="tag-row">
+          <span class="pill">GitHub Copilot</span>
+          <span class="pill">Anthropic Claude API</span>
+          <span class="pill">spec-driven dev</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>From the GitHub</h2>
+        <span class="count mono">github.com/shahrrs</span>
+      </div>
+      <div class="repo-grid">
+        <a class="repo-card" href="https://github.com/shahrrs/Machine-Learning-Project" target="_blank" rel="noopener">
+          <span class="repo-name">Machine-Learning-Project</span>
+          <p>Clustering and classification methods applied across three different datasets.</p>
+          <span class="lang">Jupyter Notebook</span>
+        </a>
+        <a class="repo-card" href="https://github.com/shahrrs/AI-Python-Projects" target="_blank" rel="noopener">
+          <span class="repo-name">AI-Python-Projects</span>
+          <p>A set of Python projects working through different AI and ML algorithms.</p>
+          <span class="lang">Jupyter Notebook</span>
+        </a>
+        <a class="repo-card" href="https://github.com/shahrrs/MyMalloc-C-Programming-" target="_blank" rel="noopener">
+          <span class="repo-name">MyMalloc</span>
+          <p>A hand-built implementation of malloc, written from scratch in C.</p>
+          <span class="lang">C</span>
+        </a>
+        <a class="repo-card" href="https://github.com/shahrrs/Polynomial-Project" target="_blank" rel="noopener">
+          <span class="repo-name">Polynomial-Project</span>
+          <p>Linked-list based data structure for representing and operating on polynomials.</p>
+          <span class="lang">Java</span>
+        </a>
+        <a class="repo-card" href="https://github.com/shahrrs/Train-Scheduling-System" target="_blank" rel="noopener">
+          <span class="repo-name">Train-Scheduling-System</span>
+          <p>A scheduling system for trains built with JSP on the front end and SQL underneath.</p>
+          <span class="lang">Java · JSP · SQL</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Graduate coursework</h2>
+        <span class="count">described, not linked</span>
+      </div>
+      <div class="school-entry">
+        <span class="repo-name">morphtxt — Java CLI testing</span>
+        <p>
+          A Java command-line tool built around rigorous test design: category-partition
+          test methods, generated JUnit test suites, and the implementation to match.
+        </p>
+        <span class="note">OMSCS · Georgia Tech — school policy, no public repo</span>
+      </div>
+      <div class="school-entry">
+        <span class="repo-name">JobCompare6300 — Android</span>
+        <p>
+          A group Android project for comparing job listings, including Room database setup,
+          unit and instrumented testing, and Appium-driven UI test automation.
+        </p>
+        <span class="note">OMSCS · Georgia Tech — group project, no public repo</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="footer-note">Rishi Shah — built by hand, styled with an assist from AI.</span>
+    <nav class="footer-links">
+      <a href="https://github.com/shahrrs" target="_blank" rel="noopener">github</a>
+      <a href="https://linkedin.com/in/rishi-shah1" target="_blank" rel="noopener">linkedin</a>
+      <a href="mailto:17shahr@gmail.com">email</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
